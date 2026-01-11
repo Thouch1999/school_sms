@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@source "../../views/**/*.blade.php";
+
+@theme {
+  --color-primary: #3b82f6;
+  --color-primary-hover: #2563eb;
+  --color-sidebar: #0f172a;
+  --color-background-light: #f6f8f6;
+  --color-background-dark: #102216;
+  --color-surface-light: #ffffff;
+  --color-surface-dark: #1a2e22;
+
+  --font-display: "Battambang", "Koulen", "Lexend", sans-serif;
+  --font-body: "Battambang", "Hanuman", "Noto Sans", sans-serif;
+  --font-sans: "Battambang", "Hanuman", "Lexend", sans-serif;
+  --font-khmer: "Battambang", "Hanuman", "Koulen", "Angkor", sans-serif;
+}
+
+/* Enable class-based dark mode in Tailwind v4 */
+@custom-variant dark (&:where(.dark, .dark *));
+
+[x-cloak] {
+  display: none !important;
+}
